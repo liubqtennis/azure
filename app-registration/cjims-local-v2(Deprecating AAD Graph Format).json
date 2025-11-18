@@ -1,0 +1,229 @@
+{
+	"id": "d3a8123e-d96d-401b-9e25-c1fdff7eb0c0",
+	"acceptMappedClaims": null,
+	"accessTokenAcceptedVersion": 2,
+	"addIns": [],
+	"allowPublicClient": null,
+	"appId": "62fe0bf0-6d1e-4ca6-9a42-a6d2a733b4a5",
+	"appRoles": [
+		{
+			"allowedMemberTypes": [
+				"User"
+			],
+			"description": "access",
+			"displayName": "access",
+			"id": "a16118bb-20d6-4007-b432-8cdce77967f2",
+			"isEnabled": true,
+			"origin": "Application",
+			"value": "access"
+		},
+		{
+			"allowedMemberTypes": [
+				"Application"
+			],
+			"description": "application that can have access to cjims' rest api",
+			"displayName": "api-access",
+			"id": "16d3320a-a42c-411e-97dc-3546d17fbcba",
+			"isEnabled": true,
+			"origin": "Application",
+			"value": "api-access"
+		}
+	],
+	"oauth2AllowUrlPathMatching": false,
+	"createdDateTime": "2025-11-15T16:49:27Z",
+	"description": null,
+	"certification": null,
+	"disabledByMicrosoftStatus": null,
+	"groupMembershipClaims": "DirectoryRole",
+	"identifierUris": [
+		"api://62fe0bf0-6d1e-4ca6-9a42-a6d2a733b4a5/ofp"
+	],
+	"informationalUrls": {
+		"termsOfService": null,
+		"support": null,
+		"privacy": null,
+		"marketing": null
+	},
+	"keyCredentials": [],
+	"knownClientApplications": [],
+	"logoUrl": null,
+	"logoutUrl": null,
+	"name": "cjims-local-v2",
+	"notes": null,
+	"oauth2AllowIdTokenImplicitFlow": true,
+	"oauth2AllowImplicitFlow": true,
+	"oauth2Permissions": [
+		{
+			"adminConsentDescription": "allow the application to Access CJIMS REST API ",
+			"adminConsentDisplayName": "Api.Read",
+			"id": "8acb95b1-076f-4cb3-9683-bf523a965815",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"type": "Admin",
+			"userConsentDescription": "allow the application to Access CJIMS REST API ",
+			"userConsentDisplayName": "Api.Read",
+			"value": "Api.Read"
+		}
+	],
+	"oauth2RequirePostResponse": false,
+	"optionalClaims": {
+		"idToken": [
+			{
+				"name": "email",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			},
+			{
+				"name": "upn",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			},
+			{
+				"name": "groups",
+				"source": null,
+				"essential": false,
+				"additionalProperties": [
+					"sam_account_name"
+				]
+			},
+			{
+				"name": "preferred_username",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			}
+		],
+		"accessToken": [
+			{
+				"name": "auth_time",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			},
+			{
+				"name": "email",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			},
+			{
+				"name": "upn",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			},
+			{
+				"name": "groups",
+				"source": null,
+				"essential": false,
+				"additionalProperties": [
+					"sam_account_name"
+				]
+			},
+			{
+				"name": "idtyp",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			},
+			{
+				"name": "preferred_username",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			},
+			{
+				"name": "aud",
+				"source": null,
+				"essential": false,
+				"additionalProperties": [
+					"use_guid"
+				]
+			}
+		],
+		"saml2Token": [
+			{
+				"name": "groups",
+				"source": null,
+				"essential": false,
+				"additionalProperties": []
+			}
+		]
+	},
+	"orgRestrictions": [],
+	"parentalControlSettings": {
+		"countriesBlockedForMinors": [],
+		"legalAgeGroupRule": "Allow"
+	},
+	"passwordCredentials": [
+		{
+			"customKeyIdentifier": null,
+			"endDate": "2027-11-15T20:47:09.442Z",
+			"keyId": "d104a6a1-7b03-4a74-af42-f124e4174dfe",
+			"startDate": "2025-11-15T20:47:09.442Z",
+			"value": null,
+			"createdOn": "2025-11-15T20:47:32.2612449Z",
+			"hint": "RIj",
+			"displayName": "cjims-local-v2-sec"
+		}
+	],
+	"preAuthorizedApplications": [
+		{
+			"appId": "2f9bf930-d65d-431f-a9cc-210f1789d4ec",
+			"permissionIds": [
+				"8acb95b1-076f-4cb3-9683-bf523a965815"
+			]
+		}
+	],
+	"publisherDomain": "liubqtennis163.onmicrosoft.com",
+	"replyUrlsWithType": [
+		{
+			"url": "https://localhost:9443/ibm/api/social-login/cjims/redirect/azuread",
+			"type": "Web"
+		},
+		{
+			"url": "http://localhost:9081/ibm/api/social-login/cjims/redirect/azuread",
+			"type": "Web"
+		},
+		{
+			"url": "http://localhost:9080/ibm/api/social-login/cjims/redirect/azuread",
+			"type": "Web"
+		}
+	],
+	"requiredResourceAccess": [
+		{
+			"resourceAppId": "00000003-0000-0000-c000-000000000000",
+			"resourceAccess": [
+				{
+					"id": "64a6cdd6-aab1-4aaf-94b8-3cc8405e90d0",
+					"type": "Scope"
+				},
+				{
+					"id": "14dad69e-099b-42c9-810b-d002981feec1",
+					"type": "Scope"
+				},
+				{
+					"id": "37f7f235-527c-4136-accd-4a02d197296e",
+					"type": "Scope"
+				},
+				{
+					"id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+					"type": "Scope"
+				}
+			]
+		}
+	],
+	"samlMetadataUrl": null,
+	"signInUrl": null,
+	"signInAudience": "AzureADMyOrg",
+	"tags": [
+		"apiConsumer",
+		"backgroundProcess",
+		"webApi",
+		"webApp"
+	],
+	"tokenEncryptionKeyId": null
+}
